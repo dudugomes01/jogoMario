@@ -48,14 +48,33 @@
     
 } */
 .div-box-btn{
-    width: 100%;
-    align-items: center;
-}
-.massage-button{
-    width: 100px;
-    margin: 0 auto;
     /* display: none; */
-    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba( 0, 0, 0, 0.8);
+    flex-direction: column;
+    display: flex;
+} 
+.massage-button{
+    display: flex;
+    font-size: 2.5rem;
+    background-color: rgb(52, 192, 10);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-top: 16px;
+    color: white;
+    
+}
+.massage-button:hover{
+    background-color: white;
+    color: rgba(65,185,131,1);
 }
 .massage-button-visible{
     display: flex;

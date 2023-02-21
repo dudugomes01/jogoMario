@@ -6,8 +6,8 @@
 
 .game-board{
     width: 100%;
-    height: 500px;
-    border-bottom: 15px solid rgb(22, 130, 3);
+    height: 80vh;
+    /* border-bottom: 15px solid rgb(22, 130, 3); */
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -16,7 +16,7 @@
 }
 .pipe{
     position: absolute;
-    bottom: -1px;
+    bottom: 0; 
     width: 60px;
     animation: pipe-animation 1.5s infinite linear;
 }
@@ -33,7 +33,33 @@
     position: absolute;
     animation: clouds 20s infinite linear;
 }
-
+.box-piso{
+    background-image: url(/img/piso.png);
+    bottom: 0px;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    position: absolute;
+}
+/* .chaoMario{
+    width: 100%;
+    height: 50px;
+    background-attachment: fixed;
+    
+} */
+.div-box-btn{
+    width: 100%;
+    align-items: center;
+}
+.massage-button{
+    width: 100px;
+    margin: 0 auto;
+    /* display: none; */
+    padding: 10px 20px;
+}
+.massage-button-visible{
+    display: flex;
+}
 
 @keyframes pipe-animation{
     from{
@@ -46,7 +72,7 @@
 
 @keyframes mario-jump{
     0%{
-        bottom: 0;
+        bottom: 64px;
     }
     40%{
         bottom: 180px;
@@ -58,7 +84,7 @@
         bottom: 180px;
     }
     100%{
-        bottom: 0;
+        bottom: 64px;
     }
 }
 
@@ -70,3 +96,20 @@
         right: 100%;
     }
 }
+
+
+footer {
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  
+  .text-footer {
+    /* position: absolute; */
+    text-align: center;
+    font-size: 1.0rem;
+    color: rgb(255, 255, 255);
+  }

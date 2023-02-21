@@ -1,5 +1,9 @@
 const mario = document.querySelector(".mario")
 const pipe = document.querySelector(".pipe")
+const reload = document.querySelector(".massage-button")
+
+
+// location.reload()
 
 const jump = ()=>{
     mario.classList.add('jump')
@@ -28,6 +32,7 @@ const loop = setInterval(() =>{
 
 
         clearInterval(loop)
+        deNovo()
     }
 
 },10 )

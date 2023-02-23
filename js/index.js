@@ -3,11 +3,7 @@ const pipe = document.querySelector(".pipe")
 // const reload = document.querySelector(".massage-button")
 const boxReload = document.querySelector(".div-box-btn")
 
-function reset(){
-    boxReload.classList.add("visible")
-    
-}
-reset()
+
 const jump = ()=>{
     mario.classList.add('jump')
 
